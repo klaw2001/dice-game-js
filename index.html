@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dice Game</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="section-1">
+            <div class="title">
+                <img src="title-dice.png" alt="">
+                <h1>Dice Game</h1>
+                <img src="title-dice.png" alt="">
+            </div>
+            <div class="player-info">
+        
+                <input type="text" name="" id="name1" placeholder="Player 1"><br>
+                <input type="text" name="" id="name2" placeholder="Player 2">
+                <!-- <div ontouchstart=""> -->
+                    <div class="button">
+                      <a onclick="start()" id="nextpage" type="button">Let's Go</a>
+                    </div>
+                  <!-- </div> -->
+            </div>
+        </section>
+      <section class="section-2">
+        <div class="title">
+          <img src="title-dice.png" alt="" />
+          <h1>Dice Game</h1>
+          <img src="title-dice.png" alt="" />
+        </div>
+        <div class="play">
+          <h1 id="wonStatus"></h1>
+          <p id="player1"></p>
+          <p id="player2"></p>
+        </div>
+        <div class="de-player xoxo">
+          <p id="pname1">Player 1</p>
+          <p id="pname2">Player 2</p>
+        </div>
+        <div class="dice-img">
+          <div class="img" id="box1">
+            <!-- <img src="title-dice (400 × 400 px).png" alt=""> -->
+          </div>
+          <div class="img" id="box2">
+            <!-- <img src="title-dice (400 × 400 px).png" alt=""> -->
+          </div>
+        </div>
+        <div class="final-btn">
+          <div class="button">
+            <a href="#" onclick="roll()" id="roll">Roll</a>
+          </div>
+          <div class="button">
+            <a href="#" onclick="reset()" id="reset">Reset</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
